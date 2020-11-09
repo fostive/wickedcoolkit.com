@@ -4,9 +4,23 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center ;
   background-color: white;
 }
+
+/* Webring container
+------------------------*/
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px;
+}
+
+/*for demo purposes */
+.light-bg { background-color: #f6f0e2; }
+.dark-bg  { background-color: #1e1e60; }
 
 /* Webring navigation
 ------------------------*/
@@ -16,11 +30,18 @@ body {
   width: calc(100% - 20px);
   margin: 10px;
   background-image: linear-gradient(45deg, #79589f, #009edb);
-  box-shadow: .3em .3em 0 #1e1e60;
   font-size: 100%;
   font-family: 'Courier New', Courier, serif;
   font-weight: bold;
   color: #f6f0e2;
+}
+
+.webring.light-mode {
+  box-shadow: .3em .3em 0 #1e1e60;
+}
+
+.webring.dark-mode {
+  box-shadow: .3em .3em 0 #f6f0e2;
 }
 
 .webring a {
