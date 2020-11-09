@@ -34,14 +34,17 @@ body {
   font-family: 'Courier New', Courier, serif;
   font-weight: bold;
   color: #f6f0e2;
+  border: 2px solid;
 }
 
 .webring.light-mode {
   box-shadow: .3em .3em 0 #1e1e60;
+  border-color: #1e1e60;
 }
 
 .webring.dark-mode {
   box-shadow: .3em .3em 0 #f6f0e2;
+  border-color: #f6f0e2;
 }
 
 .webring a {
