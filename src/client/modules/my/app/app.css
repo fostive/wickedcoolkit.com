@@ -1,0 +1,23 @@
+header {
+    width: 100%;
+    height: 220px;
+    display: grid;
+    place-content: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        to bottom,
+        #6bc0db 33.33%,
+        #009edb 33.33%,
+        #009edb 66.66%,
+        #79589f 66.66%
+    );
+    background-size: calc(50% - 120px) 100px;
+    background-position: 0 50%;
+}
+
+main {
+    height: 500px; /* temp */
+    max-width: 900px;
+    width: 90%;
+    background-image: linear-gradient(225deg, transparent 4em, #f6f0e2 4em);
+}

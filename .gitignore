@@ -1,19 +1,29 @@
-lib-cov
-*.seed
+# Log files
+logs
 *.log
-*.csv
-*.dat
-*.out
-*.pid
-*.gz
+*-debug.log
+*-error.log
+
+# Standard lib folder
+/lib
+
+# Standard dist folder
+/dist
+
+# Tooling files
+node_modules
+
+# Temp directory
+/tmp
+
+# Jest coverage folder
+/coverage
+
+# MacOS system files
 .DS_Store
 
-pids
-logs
-results
-
-node_modules
-npm-debug.log
-*.sublime*
-
-public
+# Windows system files
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
