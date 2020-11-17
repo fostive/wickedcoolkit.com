@@ -2,16 +2,13 @@
     <div class="trading-card">
         <div class="front">
             <section class="dev-intro">
-                <h1 class="dev-name">Lynn Fisher</h1>
+                <h1 class="dev-name">{displayName}</h1>
                 <div class="dev-img">
-                    <img
-                        src="./resources/images/trading-card-placeholder.jpg"
-                        alt="Lynn Fisher"
-                    />
+                    <img src={imgSrc} alt={displayName} />
                 </div>
                 <ul class="contact-links">
-                    <li class="contact-email">
-                        <a href="">
+                    <li if:true={email} class="contact-email">
+                        <a href={email}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="15"
@@ -35,8 +32,8 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="contact-link">
-                        <a href="">
+                    <li if:true={link} class="contact-link">
+                        <a href={link}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="15"
@@ -68,8 +65,8 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="contact-twitter">
-                        <a href="">
+                    <li if:true={twitter} class="contact-twitter">
+                        <a href={twitter}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="15"
@@ -83,8 +80,8 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="contact-codepen">
-                        <a href="">
+                    <li if:true={codepen} class="contact-codepen">
+                        <a href={codepen}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="15"
@@ -98,8 +95,8 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="contact-github">
-                        <a href="">
+                    <li if:true={github} class="contact-github">
+                        <a href={github}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="15"
@@ -114,8 +111,8 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="contact-linkedin">
-                        <a href="">
+                    <li if:true={linkedin} class="contact-linkedin">
+                        <a href={linkedin}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="15"
@@ -140,8 +137,8 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="contact-instagram">
-                        <a href="">
+                    <li if:true={instagram} class="contact-instagram">
+                        <a href={instagram}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="15"
@@ -168,56 +165,21 @@
                 </ul>
             </section>
             <section class="dev-desc">
-                <p class="description">
-                    A designer and CSS developer making weird web projects
-                </p>
-                <ul class="strengths">
+                <p class="description">{description}</p>
+                <ul if:true={strengths} class="strengths">
                     <h2>Feats of strength</h2>
-                    <li>CSS</li>
-                    <li>HTML</li>
-                    <li>design</li>
-                    <li>illustration</li>
-                    <li>obscure trivia</li>
+                    <template for:each={strengths} for:item="strength">
+                        <li key={strength}>{strength}</li>
+                    </template>
                 </ul>
             </section>
         </div>
         <div class="back">
-            <a href="" class="sticker"
-                ><img src="./resources/images/sticker-geology.svg" alt=""
-            /></a>
-            <a href="" class="sticker"
-                ><img src="./resources/images/sticker-geology.svg" alt=""
-            /></a>
-            <a href="" class="sticker"
-                ><img src="./resources/images/sticker-geology.svg" alt=""
-            /></a>
-            <a href="" class="sticker"
-                ><img src="./resources/images/sticker-geology.svg" alt=""
-            /></a>
-            <a href="" class="sticker"
-                ><img src="./resources/images/sticker-geology.svg" alt=""
-            /></a>
-            <a href="" class="sticker"
-                ><img src="./resources/images/sticker-geology.svg" alt=""
-            /></a>
-            <a href="" class="sticker"
-                ><img src="./resources/images/sticker-geology.svg" alt=""
-            /></a>
-            <a href="" class="sticker"
-                ><img src="./resources/images/sticker-geology.svg" alt=""
-            /></a>
-            <a href="" class="sticker"
-                ><img src="./resources/images/sticker-geology.svg" alt=""
-            /></a>
-            <a href="" class="sticker"
-                ><img src="./resources/images/sticker-geology.svg" alt=""
-            /></a>
-            <a href="" class="sticker"
-                ><img src="./resources/images/sticker-geology.svg" alt=""
-            /></a>
-            <a href="" class="sticker"
-                ><img src="./resources/images/sticker-geology.svg" alt=""
-            /></a>
+            <template for:each={stickers} for:item="sticker">
+                <a key={sticker.id} href={sticker.href} class="sticker">
+                    <img src={sticker.imgSrc} alt={sticker.imgAlt} />
+                </a>
+            </template>
         </div>
     </div>
 </template>
