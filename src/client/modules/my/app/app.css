@@ -16,8 +16,10 @@ header {
 }
 
 main {
-    height: 500px; /* temp */
-    max-width: 900px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
     width: 90%;
     background-image: linear-gradient(225deg, transparent 4em, #f6f0e2 4em);
 }
