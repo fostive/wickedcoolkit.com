@@ -20,6 +20,178 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 30px;
-    width: 90%;
+    display: grid;
+    grid-gap: 20px;
     background-image: linear-gradient(225deg, transparent 4em, #f6f0e2 4em);
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+    main {
+        width: 90%;
+        max-width: 800px;
+        grid-template-columns: 1fr 1.3fr;
+    }
+
+    .trading-card-content {
+        margin-top: 2em;
+    }
+
+    .trading-card {
+        grid-column: 2;
+        grid-row: 2 / 4;
+    }
+
+    .stickers {
+        grid-row: 3;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    main {
+        width: 90%;
+        max-width: 1200px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .trading-card-content {
+        align-self: center;
+    }
+
+    .trading-card {
+        grid-column: 2 / -1;
+    }
+
+    .stickers {
+        grid-column: 3;
+    }
+
+    .hit-counter,
+    .webring {
+        grid-row: 3;
+    }
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+p {
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.button {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 8px 15px;
+    border: 2px solid #009edb;
+    text-decoration: none;
+    font-weight: bold;
+    color: #009edb;
+    box-shadow: 4px 4px 0 #009edb;
+    transition: all 300ms ease-in-out;
+}
+
+.button:hover {
+    background-color: white;
+    border-color: #1e1e60;
+    color: #1e1e60;
+    box-shadow: 6px 6px 0 #1e1e60;
+}
+
+.button + .button {
+    margin-left: 12px;
+}
+
+p.intro {
+    grid-column: 1 / -1;
+    margin: 0 2em 2em 0;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.intro small {
+    margin-top: 0.5em;
+    font-weight: normal;
+    display: block;
+}
+
+.emoji {
+    margin-right: -4px;
+    display: inline-block;
+}
+
+.arrow svg {
+    width: auto;
+}
+
+/* Trading card content */
+
+.trading-card-content {
+    position: relative;
+}
+.trading-card-content .arrow {
+    display: flex;
+    justify-content: flex-end;
+}
+.trading-card-content .bolts {
+    margin: 15px 0 0 8px;
+}
+
+@media screen and (max-width: 800px) {
+    .trading-card-content .arrow {
+        position: absolute;
+        bottom: 50px;
+        right: 70px;
+    }
+    .trading-card-content .arrow svg {
+        transform: rotate(-120deg) scale(1.5);
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .trading-card-content .arrow svg {
+        margin-bottom: 20px;
+        transform: rotate(150deg) scale(1.5);
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .trading-card-content .arrow svg {
+        margin-right: 20px;
+    }
+}
+
+/* Trading card */
+
+@media screen and (max-width: 1200px) {
+    .trading-card {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .trading-card .arrow {
+        width: 70px;
+        display: flex;
+        align-items: center;
+    }
+    .trading-card .arrow svg {
+        transform: scale(1.2) rotate(90deg);
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .trading-card .arrow {
+        display: flex;
+        justify-content: center;
+    }
+    .trading-card .arrow svg {
+        margin-top: 25px;
+        transform: scale(1.5);
+    }
 }

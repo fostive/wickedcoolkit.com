@@ -5,7 +5,7 @@ export default class TradingCard extends LightningElement {
     displayName = 'Lynn Fisher';
     description = 'A designer and CSS developer making weird web projects';
 
-    strengths = ['CSS', 'HTML', 'design', 'illustrations', 'obscure trivia'];
+    strengths = ['CSS', 'HTML', 'design', 'illustration', 'obscure trivia'];
 
     _stickers = [
         'geology',
