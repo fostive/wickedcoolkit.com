@@ -176,32 +176,6 @@ p.intro {
     margin-bottom: 3em;
 }
 
-@media screen and (max-width: 1200px) {
-    .trading-card {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    .trading-card .arrow {
-        width: 70px;
-        display: flex;
-        align-items: center;
-    }
-    .trading-card .arrow svg {
-        transform: scale(1.2) rotate(90deg);
-    }
-}
-
-@media screen and (min-width: 1201px) {
-    .trading-card .arrow {
-        display: flex;
-        justify-content: center;
-    }
-    .trading-card .arrow svg {
-        margin-top: 25px;
-        transform: scale(1.5);
-    }
-}
-
 /* Hit counter + webring content */
 
 @media screen and (min-width: 801px) {
