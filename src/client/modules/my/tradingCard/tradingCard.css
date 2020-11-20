@@ -151,20 +151,20 @@ img {
     width: 100%;
     display: grid;
     grid-gap: 1.6em;
-    grid-template-columns: minmax(320px, 380px);
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
 }
 
-@media screen and (min-width: 750px) {
+/*@media screen and (min-width: 750px) {
     .trading-card {
         max-width: 800px;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-}
+}*/
 
 .trading-card .front,
 .trading-card .back {
-    width: 380px;
+    max-width: 380px;
     min-height: 450px;
     padding: 0.7em;
     border: 2px solid #1e1e60;

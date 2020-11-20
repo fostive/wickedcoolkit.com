@@ -4,9 +4,7 @@
 .container {
     box-sizing: border-box;
     width: 100%;
-    padding: 30px;
-    display: grid;
-    place-content: center;
+    display: flex;
 }
 
 /* Hit Counter
