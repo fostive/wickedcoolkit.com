@@ -20,8 +20,10 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 30px;
+    padding-bottom: 4em;
     display: grid;
-    grid-gap: 20px;
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
     background-image: linear-gradient(225deg, transparent 4em, #f6f0e2 4em);
 }
 
@@ -111,7 +113,7 @@ p {
 
 p.intro {
     grid-column: 1 / -1;
-    margin: 0 2em 2em 0;
+    margin: 0 2em 0 0;
     font-weight: bold;
     font-size: 1.1em;
 }
@@ -123,11 +125,11 @@ p.intro {
 }
 
 .emoji {
-    margin-right: -4px;
+    margin: 0 4px 0 6px;
     display: inline-block;
 }
 
-.arrow svg {
+.arrow img {
     width: auto;
 }
 
@@ -150,13 +152,13 @@ p.intro {
         bottom: 50px;
         right: 70px;
     }
-    .trading-card-content .arrow svg {
+    .trading-card-content .arrow img {
         transform: rotate(-120deg) scale(1.5);
     }
 }
 
 @media screen and (min-width: 801px) {
-    .trading-card-content .arrow svg {
+    .trading-card-content .arrow img {
         margin-bottom: 20px;
         transform: rotate(150deg) scale(1.5);
     }
@@ -169,6 +171,10 @@ p.intro {
 }
 
 /* Trading card */
+
+.trading-card {
+    margin-bottom: 3em;
+}
 
 @media screen and (max-width: 1200px) {
     .trading-card {
@@ -193,5 +199,59 @@ p.intro {
     .trading-card .arrow svg {
         margin-top: 25px;
         transform: scale(1.5);
+    }
+}
+
+/* Hit counter + webring content */
+
+@media screen and (min-width: 801px) {
+    .hit-counter .container,
+    .webring .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    .hit-counter .container {
+        height: 110px;
+        padding-bottom: 4px;
+    }
+
+    .webring .container img {
+        height: 114px;
+    }
+}
+
+/* Sticker content */
+
+.stickers .container {
+    display: flex;
+    justify-content: flex-end;
+    height: 114px;
+}
+.stickers .arrow img {
+    margin-bottom: 20px;
+    transform: rotate(70deg) scale(1.5);
+}
+.stickers .bolts {
+    margin-left: 20px;
+}
+.stickers .sticker {
+    width: 120px;
+}
+.stickers .sticker:first-of-type {
+    transform: rotate(-5deg) translateY(-15px);
+}
+.stickers .sticker:nth-of-type(2) {
+    transform: rotate(20deg);
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+    .stickers .container {
+        justify-content: flex-start;
+    }
+    .stickers .arrow {
+        display: none;
     }
 }
