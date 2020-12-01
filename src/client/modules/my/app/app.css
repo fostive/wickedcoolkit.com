@@ -113,7 +113,7 @@ p {
 
 p.intro {
     grid-column: 1 / -1;
-    margin: 0 2em 0 0;
+    margin: 0 3em 0 0;
     font-weight: bold;
     font-size: 1.1em;
 }
@@ -175,6 +175,12 @@ p.intro {
 .trading-card {
     margin-bottom: 3em;
 }
+
+/*@media screen and (max-width: 500px) {
+    .trading-card {
+        transform: scale(.7);
+    }
+}*/
 
 /* Hit counter + webring content */
 
