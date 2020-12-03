@@ -360,7 +360,7 @@ img {
 
 .sticker:nth-child(4),
 .sticker:nth-child(12) {
-    transform: rotate(15deg);
+    transform: rotate(12deg);
 }
 
 .sticker:nth-child(5) {
@@ -372,7 +372,7 @@ img {
 }
 
 .sticker:nth-child(11) {
-    transform: rotate(-15deg);
+    transform: rotate(-13deg);
 }
 
 .sticker:hover {

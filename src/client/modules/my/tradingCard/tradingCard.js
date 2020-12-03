@@ -8,24 +8,24 @@ export default class TradingCard extends LightningElement {
     strengths = ['CSS', 'HTML', 'design', 'illustration', 'obscure trivia'];
 
     _stickers = [
-        'geology',
-        'geology',
-        'geology',
-        'geology',
-        'geology',
-        'geology',
-        'geology',
-        'geology',
-        'geology',
-        'geology',
-        'geology',
-        'geology'
+        'design',
+        'css',
+        'dogs',
+        'flags',
+        'puzzles',
+        'film&tv',
+        'music',
+        'baking',
+        'visual-arts',
+        'tabletop-games',
+        'performing-arts',
+        'html'
     ];
     get stickers() {
         return this._stickers.map((sticker) => ({
             id: sticker,
             href: '#',
-            imgSrc: `./resources/images/sticker-${sticker}.svg`,
+            imgSrc: `./resources/images/stickers/${sticker}.svg`,
             imgAlt: sticker
         }));
     }
