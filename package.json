@@ -6,8 +6,12 @@
     "bugs": "https://github.com/Luke Karrys/heroku-wicked-coolkit/issues",
     "dependencies": {
         "compression": "^1.7.4",
+        "cors": "^2.8.5",
         "express": "^4.17.1",
-        "helmet": "^4.2.0"
+        "getconfig": "^4.5.0",
+        "helmet": "^4.2.0",
+        "knex": "^0.21.12",
+        "pg": "^8.5.1"
     },
     "devDependencies": {
         "eslint": "^7.13.0",
@@ -42,6 +46,7 @@
     },
     "nodemonConfig": {
         "watch": [
+            "server.js",
             "src/server/**/*.js"
         ],
         "ext": "js",
@@ -49,7 +54,7 @@
             "src/**/*.spec.js",
             "src/**/*.test.js"
         ],
-        "exec": "node ./src/server/api.js"
+        "exec": "node server.js"
     },
     "repository": "Luke Karrys/heroku-wicked-coolkit",
     "scripts": {
@@ -58,9 +63,7 @@
         "lint": "eslint ./src/**/*.js",
         "prettier": "prettier --write \"**/*.{css,html,js,json,md,ts,yaml,yml}\"",
         "prettier:verify": "prettier --list-different \"**/*.{css,html,js,json,md,ts,yaml,yml}\"",
-        "serve": "run-p serve:client serve:api",
-        "serve:api": "node src/server/api.js",
-        "serve:client": "node scripts/server.js",
+        "serve": "node src/server/api.js",
         "test:unit": "lwc-services test:unit",
         "test:unit:coverage": "lwc-services test:unit --coverage",
         "test:unit:debug": "lwc-services test:unit --debug",

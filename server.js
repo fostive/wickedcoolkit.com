@@ -1,21 +1,24 @@
 const compression = require('compression');
 const helmet = require('helmet');
 const express = require('express');
-const knexConfig = require('../../knexfile');
+const knexConfig = require('./knexfile');
 const config = require('getconfig');
 const cors = require('cors');
+const path = require('path');
 const pg = require('knex')({
     client: 'pg',
     ...knexConfig[config.getconfig.env]
 });
 
+const HOST = process.env.HOST || 'localhost';
+const PORT = process.env.PORT || 3002;
+const DIST_DIR = './dist';
+
 const app = express();
 app.use(helmet());
 app.use(compression());
 app.use(cors());
-
-const HOST = process.env.HOST || 'localhost';
-const PORT = process.env.PORT || 3002;
+app.use(express.static(DIST_DIR));
 
 app.get('/api/hitCounter', async (req, res) => {
     const hits = await pg
@@ -40,6 +43,10 @@ app.post('/api/hitCounter', async (req, res) => {
         .first();
 
     res.json({ ...hits });
+});
+
+app.use('*', (req, res) => {
+    res.sendFile(path.resolve(DIST_DIR, 'index.html'));
 });
 
 app.listen(PORT, () =>
