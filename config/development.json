@@ -3,5 +3,6 @@
         "database": "heroku-wicked-coolkit",
         "host": "localhost",
         "port": 5432
-    }
+    },
+    "sites": ["localhost:3001"]
 }

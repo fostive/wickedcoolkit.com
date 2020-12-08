@@ -49,6 +49,18 @@ app.use('*', (req, res) => {
     res.sendFile(path.resolve(DIST_DIR, 'index.html'));
 });
 
-app.listen(PORT, () =>
-    console.log(`✅  API Server started: http://${HOST}:${PORT}/`)
-);
+const setupDb = async () => {
+    await Promise.all(
+        config.sites.map((site) =>
+            pg('hit_counter')
+                .insert({ site, count: 0 })
+                .onConflict('site')
+                .ignore()
+        )
+    );
+};
+
+app.listen(PORT, async () => {
+    await setupDb();
+    console.log(`✅  API Server started: http://${HOST}:${PORT}/`);
+});

@@ -1,3 +1,4 @@
 {
-    "db": "$DATABASE"
+    "db": "$DATABASE",
+    "sites": ["heroku-wicked-coolkit.herokuapp.com"]
 }
