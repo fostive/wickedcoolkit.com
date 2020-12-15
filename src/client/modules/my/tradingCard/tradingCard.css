@@ -355,6 +355,10 @@ img {
     transform: rotate(-5deg);
 }
 
+.sticker:nth-child(3) {
+    transform: rotate(5deg);
+}
+
 .sticker:nth-child(2),
 .sticker:nth-child(9) {
     transform: rotate(8deg);
