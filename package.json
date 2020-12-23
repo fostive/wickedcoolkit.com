@@ -1,19 +1,24 @@
 {
-  "name": "heroku-wicked-coolkit",
-  "version": "1.0.0",
-  "bugs": {
-    "url": "https://github.com/andyet/heroku-wicked-coolkit/issues"
-  },
-  "homepage": "https://github.com/andyet/heroku-wicked-coolkit#readme",
-  "keywords": [],
-  "license": "ISC",
-  "main": "index.js",
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/andyet/heroku-wicked-coolkit.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+    "name": "heroku-wicked-coolkit",
+    "version": "1.0.0",
+    "bugs": {
+        "url": "https://github.com/andyet/heroku-wicked-coolkit/issues"
+    },
+    "dependencies": {
+        "if-env": "^1.0.4",
+        "serve": "^11.3.2"
+    },
+    "homepage": "https://github.com/andyet/heroku-wicked-coolkit#readme",
+    "keywords": [],
+    "license": "ISC",
+    "main": "index.js",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/andyet/heroku-wicked-coolkit.git"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "serve": "if-env PORT && serve -l $PORT public || serve public"
+    }
 }
