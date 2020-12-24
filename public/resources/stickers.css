@@ -1,0 +1,32 @@
+.stickers-list {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 40px;
+}
+
+.sticker {
+    text-align: center;
+}
+
+.sticker img {
+    max-width: 100%;
+}
+
+.sticker a {
+    padding: 5px;
+    display: inline-block;
+    border: 1px solid #009edb;
+    box-shadow: 2px 2px 0 #009edb;
+    transition: all 300ms ease-in-out;
+    color: #009edb;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.sticker a:hover {
+    background-color: white;
+    border-color: #1e1e60;
+    color: #1e1e60;
+    box-shadow: 4px 4px 0 #1e1e60;
+}
