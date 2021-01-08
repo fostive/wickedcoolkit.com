@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1,     minimum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1,     minimum-scale=1"
+        />
         <title>Wicked Coolkit</title>
         <meta
             name="description"
@@ -51,290 +53,813 @@
 
     <body>
         <header>
-            <svg xmlns="http://www.w3.org/2000/svg" width="290" height="110" viewBox="0 0 290 110"><path fill="#323029" d="M0 2.84l27.49-.12.68 55.65h-9.33L0 2.84z"/><circle cx="28.17" cy="79.12" r="28.16" fill="#323029"/><path fill="#f6f0e2" d="M22.81 4.83h11.31l6.73 22.35L48.3 4.72h9.21l7.45 22.46 6.73-22.35h11.09l-12.91 38.9h-9.32L52.77 21.5l-7.73 22.23h-9.32L22.81 4.83zM87.25 4.83h10.76v38.62H87.25zM103.74 24.26v-.11c0-11.26 8.67-20.09 20.36-20.09 7.89 0 13 3.31 16.39 8.06l-8.06 6.23c-2.2-2.76-4.74-4.52-8.44-4.52-5.4 0-9.21 4.58-9.21 10.2v.12c0 5.79 3.81 10.31 9.21 10.31 4 0 6.4-1.87 8.72-4.69l8.06 5.74c-3.64 5-8.55 8.72-17.11 8.72a19.61 19.61 0 0 1-19.92-19.97zM145.34 4.83h10.71V20.5l13.3-15.67h12.69l-14.63 16.61 15.12 22.02h-12.85l-9.71-14.35-3.92 4.36v9.99h-10.71V4.83zM185.62 4.83h31.06v9.11h-20.47v5.85h18.54v8.44h-18.54v6.12h20.75v9.11h-31.34V4.83zM237.32 4.83h-14.9v38.63h14.68c13.9 0 22-8.28 22-19.43v-.11c.01-11.14-7.99-19.09-21.78-19.09zm10.81 19.37c0 6.24-4.25 9.77-10.65 9.77h-4.36V14.32h4.36c6.4 0 10.65 3.59 10.65 9.77zM22.81 80.25v-.11c0-11.26 8.66-20.09 20.36-20.09 7.89 0 13 3.31 16.38 8.06l-8 6.23c-2.21-2.76-4.75-4.52-8.44-4.52-5.41 0-9.22 4.58-9.22 10.21v.11c0 5.79 3.81 10.31 9.22 10.31 4 0 6.4-1.87 8.71-4.69l8.06 5.74c-3.64 5-8.55 8.72-17.11 8.72a19.61 19.61 0 0 1-19.96-19.97zM82.84 60.05c-11.92 0-20.86 9-20.86 20.09v.11c0 11.09 8.83 20 20.75 20s20.85-9 20.85-20.08V80c0-11.06-8.83-19.95-20.74-19.95zm9.82 20.2c0 5.57-3.92 10.32-9.82 10.32S73 85.71 73 80.14V80c0-5.58 3.92-10.32 9.77-10.32s9.93 4.85 9.93 10.43zM128.68 60.05c-11.91 0-20.85 9-20.85 20.09v.11c0 11.09 8.83 20 20.74 20s20.86-9 20.86-20.08V80c0-11.06-8.83-19.95-20.75-19.95zm9.83 20.2c0 5.57-3.92 10.32-9.83 10.32s-9.87-4.86-9.87-10.43V80c0-5.58 3.92-10.32 9.76-10.32s9.94 4.85 9.94 10.43zM155 60.82h10.7v29.25h18.71v9.38H155V60.82z"/><path fill="none" stroke="#f6f0e2" stroke-miterlimit="10" d="M189.49 60.82h10.7V76.5l13.3-15.68h12.69l-14.62 16.61 15.11 22.02h-12.85l-9.71-14.35-3.92 4.36v9.99h-10.7V60.82zM230.48 60.82h10.76v38.62h-10.76zM257.74 70.2h-11.59v-9.38h33.88v9.38h-11.59v29.25h-10.7V70.2z"/></svg>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="290"
+                height="110"
+                viewBox="0 0 290 110"
+            >
+                <path
+                    fill="#323029"
+                    d="M0 2.84l27.49-.12.68 55.65h-9.33L0 2.84z"
+                />
+                <circle cx="28.17" cy="79.12" r="28.16" fill="#323029" />
+                <path
+                    fill="#f6f0e2"
+                    d="M22.81 4.83h11.31l6.73 22.35L48.3 4.72h9.21l7.45 22.46 6.73-22.35h11.09l-12.91 38.9h-9.32L52.77 21.5l-7.73 22.23h-9.32L22.81 4.83zM87.25 4.83h10.76v38.62H87.25zM103.74 24.26v-.11c0-11.26 8.67-20.09 20.36-20.09 7.89 0 13 3.31 16.39 8.06l-8.06 6.23c-2.2-2.76-4.74-4.52-8.44-4.52-5.4 0-9.21 4.58-9.21 10.2v.12c0 5.79 3.81 10.31 9.21 10.31 4 0 6.4-1.87 8.72-4.69l8.06 5.74c-3.64 5-8.55 8.72-17.11 8.72a19.61 19.61 0 0 1-19.92-19.97zM145.34 4.83h10.71V20.5l13.3-15.67h12.69l-14.63 16.61 15.12 22.02h-12.85l-9.71-14.35-3.92 4.36v9.99h-10.71V4.83zM185.62 4.83h31.06v9.11h-20.47v5.85h18.54v8.44h-18.54v6.12h20.75v9.11h-31.34V4.83zM237.32 4.83h-14.9v38.63h14.68c13.9 0 22-8.28 22-19.43v-.11c.01-11.14-7.99-19.09-21.78-19.09zm10.81 19.37c0 6.24-4.25 9.77-10.65 9.77h-4.36V14.32h4.36c6.4 0 10.65 3.59 10.65 9.77zM22.81 80.25v-.11c0-11.26 8.66-20.09 20.36-20.09 7.89 0 13 3.31 16.38 8.06l-8 6.23c-2.21-2.76-4.75-4.52-8.44-4.52-5.41 0-9.22 4.58-9.22 10.21v.11c0 5.79 3.81 10.31 9.22 10.31 4 0 6.4-1.87 8.71-4.69l8.06 5.74c-3.64 5-8.55 8.72-17.11 8.72a19.61 19.61 0 0 1-19.96-19.97zM82.84 60.05c-11.92 0-20.86 9-20.86 20.09v.11c0 11.09 8.83 20 20.75 20s20.85-9 20.85-20.08V80c0-11.06-8.83-19.95-20.74-19.95zm9.82 20.2c0 5.57-3.92 10.32-9.82 10.32S73 85.71 73 80.14V80c0-5.58 3.92-10.32 9.77-10.32s9.93 4.85 9.93 10.43zM128.68 60.05c-11.91 0-20.85 9-20.85 20.09v.11c0 11.09 8.83 20 20.74 20s20.86-9 20.86-20.08V80c0-11.06-8.83-19.95-20.75-19.95zm9.83 20.2c0 5.57-3.92 10.32-9.83 10.32s-9.87-4.86-9.87-10.43V80c0-5.58 3.92-10.32 9.76-10.32s9.94 4.85 9.94 10.43zM155 60.82h10.7v29.25h18.71v9.38H155V60.82z"
+                />
+                <path
+                    fill="none"
+                    stroke="#f6f0e2"
+                    stroke-miterlimit="10"
+                    d="M189.49 60.82h10.7V76.5l13.3-15.68h12.69l-14.62 16.61 15.11 22.02h-12.85l-9.71-14.35-3.92 4.36v9.99h-10.7V60.82zM230.48 60.82h10.76v38.62h-10.76zM257.74 70.2h-11.59v-9.38h33.88v9.38h-11.59v29.25h-10.7V70.2z"
+                />
+            </svg>
         </header>
         <main>
             <h1>Stickers!</h1>
-            <p class="intro">A preview of the stickers you can add to your developer  trading card.<br /> Or download the art files!</p>
-            <a href="/resources/images/wicked-coolkit-stickers.zip" class="button">Download .zip</a>
+            <p class="intro">
+                A preview of the stickers you can add to your developer trading
+                card.<br />
+                Or download the art files!
+            </p>
+            <a
+                href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/stickers.zip"
+                class="button"
+                >Download .zip</a
+            >
             <section class="stickers-list">
                 <div class="sticker">
-                    <img src="/resources/images/SVG/activism.svg" alt="megaphone; social activist" />
-                    <a href="/resources/images/PNG/activism.png">PNG</a>
-                    <a href="/resources/images/SVG/activism.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/activism.svg"
+                        alt="megaphone; social activist"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/activism.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/activism.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/baking.svg" alt="bread and cake; baking bad" />
-                    <a href="/resources/images/PNG/baking.png">PNG</a>
-                    <a href="/resources/images/SVG/baking.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/baking.svg"
+                        alt="bread and cake; baking bad"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/baking.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/baking.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/birds.svg" alt="bird person" />
-                    <a href="/resources/images/PNG/birds.png">PNG</a>
-                    <a href="/resources/images/SVG/birds.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/birds.svg"
+                        alt="bird person"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/birds.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/birds.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/cats.svg" alt="cat person" />
-                    <a href="/resources/images/PNG/cats.png">PNG</a>
-                    <a href="/resources/images/SVG/cats.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/cats.svg"
+                        alt="cat person"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/cats.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/cats.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/clojure.svg" alt="Clojure logo" />
-                    <a href="/resources/images/PNG/clojure.png">PNG</a>
-                    <a href="/resources/images/SVG/clojure.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/clojure.svg"
+                        alt="Clojure logo"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/clojure.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/clojure.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/coffee.svg" alt="coffee cup; coffee drinker" />
-                    <a href="/resources/images/PNG/coffee.png">PNG</a>
-                    <a href="/resources/images/SVG/coffee.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/coffee.svg"
+                        alt="coffee cup; coffee drinker"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/coffee.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/coffee.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/comics.svg" alt="Pow!; comics hero" />
-                    <a href="/resources/images/PNG/comics.png">PNG</a>
-                    <a href="/resources/images/SVG/comics.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/comics.svg"
+                        alt="Pow!; comics hero"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/comics.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/comics.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/connection.svg" alt="glue; social gluer" />
-                    <a href="/resources/images/PNG/connection.png">PNG</a>
-                    <a href="/resources/images/SVG/connection.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/connection.svg"
+                        alt="glue; social gluer"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/connection.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/connection.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/cooking.svg" alt="pot on a stove; cooking is cool" />
-                    <a href="/resources/images/PNG/cooking.png">PNG</a>
-                    <a href="/resources/images/SVG/cooking.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/cooking.svg"
+                        alt="pot on a stove; cooking is cool"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/cooking.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/cooking.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/css.svg" alt="CSS" />
-                    <a href="/resources/images/PNG/css.png">PNG</a>
-                    <a href="/resources/images/SVG/css.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/css.svg"
+                        alt="CSS"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/css.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/css.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/design.svg" alt="pen tool; design driven" />
-                    <a href="/resources/images/PNG/design.png">PNG</a>
-                    <a href="/resources/images/SVG/design.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/design.svg"
+                        alt="pen tool; design driven"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/design.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/design.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/dnd.svg" alt="20-sided die; critical roller" />
-                    <a href="/resources/images/PNG/dnd.png">PNG</a>
-                    <a href="/resources/images/SVG/dnd.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/dnd.svg"
+                        alt="20-sided die; critical roller"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/dnd.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/dnd.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/dogs.svg" alt="dog person" />
-                    <a href="/resources/images/PNG/dogs.png">PNG</a>
-                    <a href="/resources/images/SVG/dogs.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/dogs.svg"
+                        alt="dog person"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/dogs.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/dogs.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/fashion.svg" alt="clothes; fashion fan" />
-                    <a href="/resources/images/PNG/fashion.png">PNG</a>
-                    <a href="/resources/images/SVG/fashion.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/fashion.svg"
+                        alt="clothes; fashion fan"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/fashion.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/fashion.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/fiber-arts.svg" alt="yarn and cross stitch; fiber    artist " />
-                    <a href="/resources/images/PNG/fiber-arts.png">PNG</a>
-                    <a href="/resources/images/SVG/fiber-arts.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/fiber-arts.svg"
+                        alt="yarn and cross stitch; fiber    artist "
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/fiber-arts.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/fiber-arts.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/film&tv.svg" alt="film strip; film & tv buff" />
-                    <a href="/resources/images/PNG/film&tv.png">PNG</a>
-                    <a href="/resources/images/SVG/film&tv.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/film&tv.svg"
+                        alt="film strip; film & tv buff"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/film&tv.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/film&tv.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/fitness.svg" alt="kettle bell weight; fitness is fun"    />
-                    <a href="/resources/images/PNG/fitness.png">PNG</a>
-                    <a href="/resources/images/SVG/fitness.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/fitness.svg"
+                        alt="kettle bell weight; fitness is fun"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/fitness.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/fitness.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/flags.svg" alt="flag; fun with flags" />
-                    <a href="/resources/images/PNG/flags.png">PNG</a>
-                    <a href="/resources/images/SVG/flags.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/flags.svg"
+                        alt="flag; fun with flags"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/flags.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/flags.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/geocaching.svg" alt="location market in a gift box;      geocacher" />
-                    <a href="/resources/images/PNG/geocaching.png">PNG</a>
-                    <a href="/resources/images/SVG/geocaching.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/geocaching.svg"
+                        alt="location market in a gift box;      geocacher"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/geocaching.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/geocaching.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/geology.svg" alt="sparkling minerals; rocks rock" />
-                    <a href="/resources/images/PNG/geology.png">PNG</a>
-                    <a href="/resources/images/SVG/geology.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/geology.svg"
+                        alt="sparkling minerals; rocks rock"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/geology.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/geology.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/go.svg" alt="Go gopher logo" />
-                    <a href="/resources/images/PNG/go.png">PNG</a>
-                    <a href="/resources/images/SVG/go.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/go.svg"
+                        alt="Go gopher logo"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/go.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/go.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/history.svg" alt="scroll and quill; history buff" />
-                    <a href="/resources/images/PNG/history.png">PNG</a>
-                    <a href="/resources/images/SVG/history.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/history.svg"
+                        alt="scroll and quill; history buff"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/history.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/history.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/html.svg" alt="HTML" />
-                    <a href="/resources/images/PNG/html.png">PNG</a>
-                    <a href="/resources/images/SVG/html.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/html.svg"
+                        alt="HTML"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/html.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/html.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/java.svg" alt="Java Duke" />
-                    <a href="/resources/images/PNG/java.png">PNG</a>
-                    <a href="/resources/images/SVG/java.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/java.svg"
+                        alt="Java Duke"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/java.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/java.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/javascript.svg" alt="JavaScript logo" />
-                    <a href="/resources/images/PNG/javascript.png">PNG</a>
-                    <a href="/resources/images/SVG/javascript.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/javascript.svg"
+                        alt="JavaScript logo"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/javascript.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/javascript.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/karaoke.svg" alt="microphone; karaoke crooner" />
-                    <a href="/resources/images/PNG/karaoke.png">PNG</a>
-                    <a href="/resources/images/SVG/karaoke.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/karaoke.svg"
+                        alt="microphone; karaoke crooner"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/karaoke.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/karaoke.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/languages.svg" alt="talk bubbles; lively linguist" />
-                    <a href="/resources/images/PNG/languages.png">PNG</a>
-                    <a href="/resources/images/SVG/languages.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/languages.svg"
+                        alt="talk bubbles; lively linguist"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/languages.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/languages.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/making.svg" alt="saw and hammer; wake and make" />
-                    <a href="/resources/images/PNG/making.png">PNG</a>
-                    <a href="/resources/images/SVG/making.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/making.svg"
+                        alt="saw and hammer; wake and make"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/making.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/making.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/maps.svg" alt="map; map legend" />
-                    <a href="/resources/images/PNG/maps.png">PNG</a>
-                    <a href="/resources/images/SVG/maps.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/maps.svg"
+                        alt="map; map legend"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/maps.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/maps.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/music.svg" alt="record and keyboard; music maven" />
-                    <a href="/resources/images/PNG/music.png">PNG</a>
-                    <a href="/resources/images/SVG/music.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/music.svg"
+                        alt="record and keyboard; music maven"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/music.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/music.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/nature.svg" alt="tent in the woods; nature rules" />
-                    <a href="/resources/images/PNG/nature.png">PNG</a>
-                    <a href="/resources/images/SVG/nature.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/nature.svg"
+                        alt="tent in the woods; nature rules"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/nature.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/nature.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/news.svg" alt="newspaper; news hound" />
-                    <a href="/resources/images/PNG/news.png">PNG</a>
-                    <a href="/resources/images/SVG/news.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/news.svg"
+                        alt="newspaper; news hound"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/news.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/news.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/nodejs.svg" alt="NodeJS logo" />
-                    <a href="/resources/images/PNG/nodejs.png">PNG</a>
-                    <a href="/resources/images/SVG/nodejs.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/nodejs.svg"
+                        alt="NodeJS logo"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/nodejs.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/nodejs.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/performing-arts.svg" alt="drama masks; theater nerd"     />
-                    <a href="/resources/images/PNG/performing-arts.png">PNG</a>
-                    <a href="/resources/images/SVG/performing-arts.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/performing-arts.svg"
+                        alt="drama masks; theater nerd"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/performing-arts.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/performing-arts.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/photography.svg" alt="camera; photographer" />
-                    <a href="/resources/images/PNG/photography.png">PNG</a>
-                    <a href="/resources/images/SVG/photography.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/photography.svg"
+                        alt="camera; photographer"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/photography.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/photography.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/php.svg" alt="PHP logo" />
-                    <a href="/resources/images/PNG/php.png">PNG</a>
-                    <a href="/resources/images/SVG/php.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/php.svg"
+                        alt="PHP logo"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/php.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/php.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/plants.svg" alt="house plant; plant parent" />
-                    <a href="/resources/images/PNG/plants.png">PNG</a>
-                    <a href="/resources/images/SVG/plants.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/plants.svg"
+                        alt="house plant; plant parent"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/plants.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/plants.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/politics.svg" alt="person at a podium; pumped 4      politics " />
-                    <a href="/resources/images/PNG/politics.png">PNG</a>
-                    <a href="/resources/images/SVG/politics.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/politics.svg"
+                        alt="person at a podium; pumped 4      politics "
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/politics.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/politics.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/puzzles.svg" alt="puzzle and Rubik’s cube; puzzle    master " />
-                    <a href="/resources/images/PNG/puzzles.png">PNG</a>
-                    <a href="/resources/images/SVG/puzzles.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/puzzles.svg"
+                        alt="puzzle and Rubik’s cube; puzzle    master "
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/puzzles.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/puzzles.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/python.svg" alt="Python logo" />
-                    <a href="/resources/images/PNG/python.png">PNG</a>
-                    <a href="/resources/images/SVG/python.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/python.svg"
+                        alt="Python logo"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/python.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/python.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/reading.svg" alt="stack of books; book worm" />
-                    <a href="/resources/images/PNG/reading.png">PNG</a>
-                    <a href="/resources/images/SVG/reading.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/reading.svg"
+                        alt="stack of books; book worm"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/reading.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/reading.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/ruby.svg" alt="Ruby logo" />
-                    <a href="/resources/images/PNG/ruby.png">PNG</a>
-                    <a href="/resources/images/SVG/ruby.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/ruby.svg"
+                        alt="Ruby logo"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/ruby.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/ruby.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/scala.svg" alt="Scala logo" />
-                    <a href="/resources/images/PNG/scala.png">PNG</a>
-                    <a href="/resources/images/SVG/scala.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/scala.svg"
+                        alt="Scala logo"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/scala.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/scala.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/sci-fi&fantasy.svg" alt="robot helmet; sci-fi and        fantasy" />
-                    <a href="/resources/images/PNG/sci-fi&fantasy.png">PNG</a>
-                    <a href="/resources/images/SVG/sci-fi&fantasy.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/sci-fi&fantasy.svg"
+                        alt="robot helmet; sci-fi and        fantasy"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/sci-fi&fantasy.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/sci-fi&fantasy.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/science.svg" alt="chemistry equipment; science nerd"     />
-                    <a href="/resources/images/PNG/science.png">PNG</a>
-                    <a href="/resources/images/SVG/science.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/science.svg"
+                        alt="chemistry equipment; science nerd"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/science.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/science.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/self-care.svg" alt="mirror with hearts; self loving"     />
-                    <a href="/resources/images/PNG/self-care.png">PNG</a>
-                    <a href="/resources/images/SVG/self-care.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/self-care.svg"
+                        alt="mirror with hearts; self loving"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/self-care.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/self-care.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/space.svg" alt="planets in space; space is far out" />
-                    <a href="/resources/images/PNG/space.png">PNG</a>
-                    <a href="/resources/images/SVG/space.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/space.svg"
+                        alt="planets in space; space is far out"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/space.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/space.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/sports.svg" alt="sports equipment; sportsball" />
-                    <a href="/resources/images/PNG/sports.png">PNG</a>
-                    <a href="/resources/images/SVG/sports.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/sports.svg"
+                        alt="sports equipment; sportsball"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/sports.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/sports.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/tabletop-games.svg" alt="game pieces and cards;      tabletop gamer" />
-                    <a href="/resources/images/PNG/tabletop-games.png">PNG</a>
-                    <a href="/resources/images/SVG/tabletop-games.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/tabletop-games.svg"
+                        alt="game pieces and cards;      tabletop gamer"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/tabletop-games.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/tabletop-games.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/tattoos.svg" alt="heart with a banner; body artist" />
-                    <a href="/resources/images/PNG/tattoos.png">PNG</a>
-                    <a href="/resources/images/SVG/tattoos.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/tattoos.svg"
+                        alt="heart with a banner; body artist"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/tattoos.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/tattoos.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/tea.svg" alt="teapot; tea sipper" />
-                    <a href="/resources/images/PNG/tea.png">PNG</a>
-                    <a href="/resources/images/SVG/tea.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/tea.svg"
+                        alt="teapot; tea sipper"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/tea.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/tea.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/travel.svg" alt="plane flying around the earth;      globe    trotter" />
-                    <a href="/resources/images/PNG/travel.png">PNG</a>
-                    <a href="/resources/images/SVG/travel.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/travel.svg"
+                        alt="plane flying around the earth;      globe    trotter"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/travel.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/travel.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/video-games.svg" alt="Mario question box; video gamer"      />
-                    <a href="/resources/images/PNG/video-games.png">PNG</a>
-                    <a href="/resources/images/SVG/video-games.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/video-games.svg"
+                        alt="Mario question box; video gamer"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/video-games.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/video-games.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/visual-arts.svg" alt="pencils and brushes; visual    artist " />
-                    <a href="/resources/images/PNG/visual-arts.png">PNG</a>
-                    <a href="/resources/images/SVG/visual-arts.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/visual-arts.svg"
+                        alt="pencils and brushes; visual    artist "
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/visual-arts.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/visual-arts.svg"
+                        >SVG</a
+                    >
                 </div>
                 <div class="sticker">
-                    <img src="/resources/images/SVG/writing.svg" alt="typewriter; wordsmith" />
-                    <a href="/resources/images/PNG/writing.png">PNG</a>
-                    <a href="/resources/images/SVG/writing.svg">SVG</a>
+                    <img
+                        src="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/writing.svg"
+                        alt="typewriter; wordsmith"
+                    />
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/png/writing.png"
+                        >PNG</a
+                    >
+                    <a
+                        href="https://heroku-wicked-coolkit-user.herokuapp.com/resources/stickers/svg/writing.svg"
+                        >SVG</a
+                    >
                 </div>
             </section>
         </main>
     </body>
-
 </html>
