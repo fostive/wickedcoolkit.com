@@ -1,5 +1,6 @@
 {
     "name": "wickedcoolkit.com",
+    "description": "A fun, nostalgic web toolkit built on Heroku and Salesforce.",
     "version": "1.0.0",
     "bugs": {
         "url": "https://github.com/andyet/wickedcoolkit.com/issues"
