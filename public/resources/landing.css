@@ -6,11 +6,11 @@ main {
 }
 
 @media screen and (max-width: 800px) {
-    main {
-        margin: 0 15px 15px;
-        padding: 15px;
-        padding-bottom: 2em;
-    }
+  main {
+    margin: 0 15px 15px;
+    padding: 15px;
+    padding-bottom: 2em;
+  }
 }
 
 @media screen and (min-width: 801px) {
@@ -20,114 +20,114 @@ main {
 }
 
 @media screen and (min-width: 801px) and (max-width: 1200px) {
-    main {
-        width: 95%;
-        max-width: 800px;
-        grid-template-columns: 1fr 1.3fr;
-    }
+  main {
+    width: 95%;
+    max-width: 800px;
+    grid-template-columns: 1fr 1.3fr;
+  }
 
-    .trading-card-content {
-        margin-top: 2em;
-    }
+  .trading-card-content {
+    margin-top: 2em;
+  }
 
-    .trading-card {
-        grid-column: 2;
-        grid-row: 2 / 4;
-    }
+  .trading-card {
+    grid-column: 2;
+    grid-row: 2 / 4;
+  }
 
-    .stickers {
-        grid-row: 3;
-    }
+  .stickers {
+    grid-row: 3;
+  }
 }
 
 @media screen and (min-width: 1201px) {
-    main {
-        width: 95%;
-        max-width: 1200px;
-        grid-template-columns: repeat(3, 1fr);
-    }
+  main {
+    width: 95%;
+    max-width: 1200px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    .trading-card-content {
-        align-self: center;
-    }
+  .trading-card-content {
+    align-self: center;
+  }
 
-    .trading-card {
-        grid-column: 2 / -1;
-    }
+  .trading-card {
+    grid-column: 2 / -1;
+  }
 
-    .stickers {
-        grid-column: 3;
-    }
+  .stickers {
+    grid-column: 3;
+  }
 
-    .hit-counter,
-    .webring {
-        grid-row: 3;
-    }
+  .hit-counter,
+  .webring {
+    grid-row: 3;
+  }
 }
 
 p.intro {
-    grid-column: 1 / -1;
-    margin: 0 4em 0 0;
-    font-weight: bold;
-    font-size: 1.1em;
+  grid-column: 1 / -1;
+  margin: 0 4em 0 0;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 .intro small {
-    margin-top: 0.5em;
-    font-weight: normal;
-    display: block;
+  margin-top: 0.5em;
+  font-weight: normal;
+  display: block;
 }
 
 .emoji {
-    margin: 0 4px 0 6px;
-    display: inline-block;
+  margin: 0 4px 0 6px;
+  display: inline-block;
 }
 
 .arrow img {
-    width: auto;
+  width: auto;
 }
 
 /* Trading card content */
 
 .trading-card-content {
-    position: relative;
+  position: relative;
 }
 .trading-card-content .arrow {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 .trading-card-content .bolts {
-    margin: 15px 0 0 8px;
+  margin: 15px 0 0 8px;
 }
 
 @media screen and (max-width: 800px) {
-    .trading-card-content .arrow {
-        position: absolute;
-        bottom: 50px;
-        left: 200px;
-    }
-    .trading-card-content .arrow img {
-        transform: rotate(-120deg) scale(1.5);
-    }
+  .trading-card-content .arrow {
+    position: absolute;
+    bottom: 50px;
+    left: 200px;
+  }
+  .trading-card-content .arrow img {
+    transform: rotate(-120deg) scale(1.5);
+  }
 }
 
 @media screen and (min-width: 801px) {
-    .trading-card-content .arrow img {
-        margin-bottom: 40px;
-        transform: rotate(150deg) scale(1.5);
-    }
+  .trading-card-content .arrow img {
+    margin-bottom: 40px;
+    transform: rotate(150deg) scale(1.5);
+  }
 }
 
 @media screen and (min-width: 1201px) {
-    .trading-card-content .arrow svg {
-        margin-right: 20px;
-    }
+  .trading-card-content .arrow svg {
+    margin-right: 20px;
+  }
 }
 
 /* Trading card */
 
 .trading-card {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 /* Hit counter + webring content */
@@ -135,57 +135,57 @@ p.intro {
 .hit-counter .container,
 .webring .container,
 .stickers .container {
-    padding-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 @media screen and (min-width: 801px) {
-    .hit-counter .container,
-    .webring .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-start;
-        height: 140px;
-    }
+  .hit-counter .container,
+  .webring .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 140px;
+  }
 }
 
 /* Sticker content */
 
 .stickers .container {
-    display: flex;
-    justify-content: flex-end;
-    height: 140px;
+  display: flex;
+  justify-content: flex-end;
+  height: 140px;
 }
 .stickers .arrow img {
-    margin-bottom: 20px;
-    transform: rotate(70deg) scale(1.5);
+  margin-bottom: 20px;
+  transform: rotate(70deg) scale(1.5);
 }
 .stickers .bolts {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 .stickers .sticker {
-    max-width: 120px;
-    width: 100%;
+  max-width: 120px;
+  width: 100%;
 }
 .stickers .sticker:first-of-type {
-    transform: rotate(-5deg) translateY(-15px);
+  transform: rotate(-5deg) translateY(-15px);
 }
 .stickers .sticker:nth-of-type(2) {
-    transform: rotate(20deg);
+  transform: rotate(20deg);
 }
 
 @media screen and (max-width: 500px) {
-    .stickers .bolts {
-        display: none;
-    }
+  .stickers .bolts {
+    display: none;
+  }
 }
 @media screen and (min-width: 801px) and (max-width: 1200px) {
-    .stickers .container {
-        justify-content: flex-start;
-    }
-    .stickers .arrow {
-        display: none;
-    }
+  .stickers .container {
+    justify-content: flex-start;
+  }
+  .stickers .arrow {
+    display: none;
+  }
 }
 
 .footnote {
