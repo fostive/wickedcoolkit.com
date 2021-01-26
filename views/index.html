@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta charset="utf-8" />
+
         <title>Wicked Coolkit</title>
         <meta
             name="description"
@@ -11,7 +13,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="shortcut icon" href="/resources/favicon.ico" />
 
-        <!-- TODO: Change to final URL (if this is not it) -->
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
         <meta content="@heroku" name="twitter:site" />
@@ -27,38 +28,29 @@
             property="og:description"
         />
         <meta
-            content="https://wickedcoolkit.herokuapp.com/resources/images/og-image.png"
+            content="{{prodHost}}/resources/images/og-image.png"
             property="og:image"
         />
         <meta
-            content="https://wickedcoolkit.herokuapp.com/resources/images/og-image.png"
+            content="{{prodHost}}/resources/images/og-image.png"
             name="twitter:image"
         />
-        <meta content="https://wickedcoolkit.herokuapp.com" property="og:url" />
-        <meta
-            content="https://wickedcoolkit.herokuapp.com"
-            property="twitter:url"
-        />
+        <meta content="{{prodHost}}" property="og:url" />
+        <meta content="{{prodHost}}" property="twitter:url" />
 
         <link rel="stylesheet" href="/resources/reset.css" />
         <link rel="stylesheet" href="/resources/global.css" />
         <link rel="stylesheet" href="/resources/landing.css" />
 
-        <script
-            async
-            type="module"
-            src="https://unpkg.com/wicked-coolkit/dist/tradingCard.js"
-        ></script>
-        <script
-            async
-            type="module"
-            src="https://unpkg.com/wicked-coolkit/dist/hitCounter.js"
-        ></script>
-        <script
-            async
-            type="module"
-            src="https://unpkg.com/wicked-coolkit/dist/webring.js"
-        ></script>
+        {{
+            components.tradingCard.script
+        }}
+        {{
+            components.hitCounter.script
+        }}
+        {{
+            components.webring.script
+        }}
     </head>
     <body>
         <div id="main">
@@ -112,19 +104,13 @@
                         Create and share your very own trading card. Bubblegum
                         not included.
                     </p>
-                    <a
-                        href="https://heroku.com/deploy?template=https://github.com/andyet/wicked-coolkit-user"
-                        class="button"
-                    >
-                        Make yours!
-                    </a>
+                    <a href="{{deployUrl}}" class="button">Make yours!</a>
                     <div class="bolts">
                         <img src="/resources/images/bolts1.svg" alt="bolts" />
                     </div>
                 </div>
                 <div class="trading-card">
-                    <wck-trading-card host="wickedcoolkitapi.herokuapp.com">
-                    </wck-trading-card>
+                    {{ components.tradingCard.tag }}
                 </div>
                 <div class="stickers">
                     <div class="container">
@@ -136,13 +122,13 @@
                         </div>
                         <img
                             class="sticker"
-                            src="https://unpkg.com/wicked-coolkit/dist/stickers/svg/making.svg"
-                            alt="Wake and make"
+                            src="{{sticker.making.svg}}"
+                            alt="{{sticker.making.alt}}"
                         />
                         <img
                             class="sticker"
-                            src="https://unpkg.com/wicked-coolkit/dist/stickers/svg/geology.svg"
-                            alt="Rocks rock"
+                            src="{{sticker.geology.svg}}"
+                            alt="{{sticker.geology.alt}}"
                         />
                         <div class="bolts">
                             <img
@@ -156,47 +142,30 @@
                         Show off your talents and interests, while finding
                         others who love what you love.
                     </p>
-                    <a
-                        href="https://heroku.com/deploy?template=https://github.com/andyet/wicked-coolkit-user"
-                        class="button"
-                    >
-                        Add em!
-                    </a>
-                    <a href="/stickers.html" class="button">View all</a>
+                    <a href="{{deployUrl}}" class="button">Add em!</a>
+                    <a href="/stickers" class="button">View all</a>
                 </div>
                 <div class="hit-counter">
                     <div class="container">
-                        <wck-hit-counter host="wickedcoolkitapi.herokuapp.com">
-                        </wck-hit-counter>
+                        {{ components.hitCounter.tag }}
                     </div>
                     <h2>Hit Counter</h2>
                     <p>
                         Add a hit counter to your site to see how many visitors
                         (and manual refreshes) you get.
                     </p>
-                    <a
-                        href="https://heroku.com/deploy?template=https://github.com/andyet/wicked-coolkit-user"
-                        class="button"
-                    >
-                        Add it!
-                    </a>
+                    <a href="{{deployUrl}}" class="button">Add it!</a>
                 </div>
                 <div class="webring">
                     <div class="container">
-                        <wck-webring host="wickedcoolkitapi.herokuapp.com">
-                        </wck-webring>
+                        {{ components.webring.tag }}
                     </div>
                     <h2>Webring</h2>
                     <p>
                         Link up with your buds’ sites and blogs with a webring
                         all your own.
                     </p>
-                    <a
-                        href="https://heroku.com/deploy?template=https://github.com/andyet/wicked-coolkit"
-                        class="button"
-                    >
-                        Start yours!
-                    </a>
+                    <a href="{[deployUrl}}" class="button">Start yours!</a>
                 </div>
             </main>
             <footer></footer>

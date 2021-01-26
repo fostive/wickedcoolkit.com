@@ -6,6 +6,7 @@
         "url": "https://github.com/andyet/wickedcoolkit.com/issues"
     },
     "dependencies": {
+        "handlebars": "^4.7.6",
         "if-env": "^1.0.4",
         "serve": "^11.3.2"
     },
@@ -19,6 +20,7 @@
         "url": "git+https://github.com/andyet/wickedcoolkit.com.git"
     },
     "scripts": {
+        "build": "node build.js",
         "serve": "if-env PORT && serve -l $PORT public || serve public"
     }
 }
