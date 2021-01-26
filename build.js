@@ -6,7 +6,7 @@ const path = require("path");
 const COOLKIT_VERSION = "";
 const USER_REPO = "https://github.com/andyet/wicked-coolkit-user";
 const API_HOST = "wickedcoolkitapi.herokuapp.com";
-const PROD_URL = "https://wickedcoolkit.herokuapp.com";
+const PROD_URL = "https://wickedcoolkit.com";
 const CDN_HOST = "https://unpkg.com/wicked-coolkit";
 const CDN = CDN_HOST + (COOLKIT_VERSION ? `@${COOLKIT_VERSION}` : "") + "/dist";
 
