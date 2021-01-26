@@ -6,8 +6,11 @@
     "url": "https://github.com/andyet/wickedcoolkit.com/issues"
   },
   "dependencies": {
+    "cssnano": "^4.1.10",
     "handlebars": "^4.7.6",
     "if-env": "^1.0.4",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
     "serve": "^11.3.2"
   },
   "homepage": "https://github.com/andyet/wickedcoolkit.com#readme",
@@ -20,9 +23,9 @@
     "url": "git+https://github.com/andyet/wickedcoolkit.com.git"
   },
   "scripts": {
+    "build": "if-env NODE_ENV=production && npm run build:production || npm run build:dev",
     "build:dev": "node build.js",
     "build:production": "node build.js && npm run minify",
-    "build": "if-env NODE_ENV=production && npm run build:production || npm run build:dev",
     "minify": "for file in public/resources/*.css; do cat $file | postcss > ${file%.*}.min.css; done",
     "serve": "if-env PORT && serve -l $PORT public || serve public"
   }
