@@ -2,20 +2,29 @@ const fs = require("fs");
 const Handlebars = require("handlebars");
 const path = require("path");
 
-// TODO: change to ^1 to go live
-const COOLKIT_VERSION = "";
+const COOLKIT_VERSION = require("./package.json").dependencies[
+  "wicked-coolkit"
+];
 const USER_REPO = "https://github.com/andyet/wicked-coolkit-user";
 const API_HOST = "wickedcoolkitapi.herokuapp.com";
 const PROD_URL = "https://wickedcoolkit.com";
 const CDN_HOST = "https://unpkg.com/wicked-coolkit";
-const CDN = CDN_HOST + (COOLKIT_VERSION ? `@${COOLKIT_VERSION}` : "") + "/dist";
+const CDN = `${CDN_HOST}@${COOLKIT_VERSION}/dist`;
 
 const sticker = (p) => `${CDN}/stickers/${p}`;
 const script = (name) =>
   `<script async type="module" src="${CDN}/${name}.js"></script>`;
 
 const stickers = fs
-  .readFileSync("./stickers.csv")
+  .readFileSync(
+    path.join(
+      "node_modules",
+      "wicked-coolkit",
+      "dist",
+      "stickers",
+      "stickers.csv"
+    )
+  )
   .toString()
   .split("\n")
   .slice(1)
@@ -59,6 +68,6 @@ const viewsDir = "views";
 const publicDir = "public";
 fs.readdirSync(viewsDir).forEach((v) => {
   const templateSrc = fs.readFileSync(path.join(viewsDir, v)).toString();
-  const template = Handlebars.compile(templateSrc);
+  const template = Handlebars.compile(templateSrc, { strict: true });
   fs.writeFileSync(path.join(publicDir, v), template(locals));
 });
