@@ -23,10 +23,9 @@
     "url": "git+https://github.com/andyet/wickedcoolkit.com.git"
   },
   "scripts": {
-    "build": "if-env NODE_ENV=production && npm run build:production || npm run build:dev",
-    "build:dev": "node build.js",
-    "build:production": "node build.js && npm run minify",
-    "minify": "for file in public/resources/*.css; do cat $file | postcss > ${file%.*}.min.css; done",
+    "build": "node build.js && if-env NODE_ENV=production && npm run minify || true",
+    "clean": "rm -rf public/resources/*.min.css",
+    "minify": "npm run clean; for file in public/resources/*.css; do cat $file | postcss > ${file%.*}.min.css; done",
     "serve": "if-env PORT && serve -l $PORT public || serve public"
   }
 }
