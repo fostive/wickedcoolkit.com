@@ -60,6 +60,11 @@ p {
   font-weight: normal;
 }
 
+a {
+    color: #009edb;
+    font-weight: bold;
+}
+
 .button {
   display: inline-block;
   margin-bottom: 12px;

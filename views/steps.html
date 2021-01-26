@@ -36,10 +36,7 @@
 
     <link rel="stylesheet" href="/resources/reset{{dotMin}}.css" />
     <link rel="stylesheet" href="/resources/global{{dotMin}}.css" />
-    <link rel="stylesheet" href="/resources/landing{{dotMin}}.css" />
-
-    {{{ components.tradingCard.script }}} {{{ components.hitCounter.script }}}
-    {{{ components.webring.script }}}
+    <link rel="stylesheet" href="/resources/steps{{dotMin}}.css" />
   </head>
   <body>
     <div id="main">
@@ -69,82 +66,28 @@
       </header>
 
       <main>
-        <p class="intro">
-            Some cool tools to celebrate your unique place in this weird
-            web world.
-            <small>
-                Hit one of the buttons below to get started! Or read through the <a href="/steps.html">full process</a>.
-            </small>
-        </p>
-        <div class="trading-card-content">
-          <div class="arrow">
-            <img src="/resources/images/arrow2.svg" alt="arrow" />
-          </div>
-          <h2>Developer Trading Card</h2>
-          <p>
-            Create and share your very own trading card. Bubblegum not included.
-          </p>
-          <a href="{{deployUrl}}" class="button">Make yours!</a>
-          <div class="bolts">
-            <img src="/resources/images/bolts1.svg" alt="bolts" />
-          </div>
-        </div>
-        <div class="trading-card">{{{ components.tradingCard.tag }}}</div>
-        <div class="stickers">
-          <div class="container">
-            <div class="arrow">
-              <img src="/resources/images/arrow2.svg" alt="arrow" />
-            </div>
-            <img
-              class="sticker"
-              src="{{stickers.making.svg}}"
-              alt="{{stickers.making.alt}}"
-            />
-            <img
-              class="sticker"
-              src="{{stickers.geology.svg}}"
-              alt="{{stickers.geology.alt}}"
-            />
-            <div class="bolts">
-              <img src="/resources/images/bolts2.svg" alt="bolts" />
-            </div>
-          </div>
-          <h2>Stickers</h2>
-          <p>
-            Show off your talents and interests, while finding others who love
-            what you love.
-          </p>
-          <a href="{{deployUrl}}" class="button">Add em!</a>
-          <a href="/stickers" class="button">View all</a>
-        </div>
-        <div class="hit-counter">
-          <div class="container">{{{ components.hitCounter.tag }}}</div>
-          <h2>Hit Counter</h2>
-          <p>
-            Add a hit counter to your site to see how many visitors (and manual
-            refreshes) you get.
-          </p>
-          <a href="{{deployUrl}}" class="button">Add it!</a>
-        </div>
-        <div class="webring">
-          <div class="container">{{{ components.webring.tag }}}</div>
-          <h2>Webring</h2>
-          <p>
-            Link up with your buds’ sites and blogs with a webring all your own.
-          </p>
-          <a href="{[deployUrl}}" class="button">Start yours!</a>
-        </div>
-        <small class="footnote">
-            Built with
-            <span
-                role="img"
-                aria-label="purple heart"
-                class="emoji"
-            >
-                💜
-            </span>
-            on Heroku and Salesforce.
-        </small>
+        <h2>Steps</h2>
+        <ol>
+          <li>
+            <a href="{{deployUrl}}">Deploy app to Heroku</a>
+          </li>
+          <li>Create Heroku account or log in</li>
+          <li>Name your app and Deploy</li>
+          <li>Click View App</li>
+          <li>
+            You’ll land on /getting-started in your app with more detailed
+            instructions (but here are the main steps):
+          </li>
+          <ol>
+            <li>Create Salesforce developer account</li>
+            <li>Deploy Salesforce app</li>
+            <li>Connect Heroku app to Salesforce app</li>
+            <li>Try changing the UI theme</li>
+            <li>Upload stickers data into Salesforce</li>
+            <li>Update details for trading card and/or webring</li>
+          </ol>
+          <li>Share your coolkit!</li>
+        </ol>
       </main>
       <footer></footer>
     </div>
