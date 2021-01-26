@@ -18,6 +18,7 @@ const stickers = fs
   .readFileSync("./stickers.csv")
   .toString()
   .split("\n")
+  .slice(1)
   .filter(Boolean)
   .map((line) => {
     const [alt, name] = line.split(",").map(JSON.parse);
