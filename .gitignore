@@ -22,3 +22,5 @@ ehthumbs.db
 [Dd]esktop.ini
 $RECYCLE.BIN/
 
+public/*.html
+public/resources/*.min.css

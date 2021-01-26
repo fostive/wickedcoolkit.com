@@ -1,105 +1,105 @@
 header {
-    width: 100%;
-    height: 220px;
-    display: grid;
-    place-content: center;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(
-        to bottom,
-        #6bc0db 33.33%,
-        #009edb 33.33%,
-        #009edb 66.66%,
-        #79589f 66.66%
-    );
-    background-size: calc(50% - 120px) 100px;
-    background-position: 0 50%;
+  width: 100%;
+  height: 220px;
+  display: grid;
+  place-content: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+    to bottom,
+    #6bc0db 33.33%,
+    #009edb 33.33%,
+    #009edb 66.66%,
+    #79589f 66.66%
+  );
+  background-size: calc(50% - 120px) 100px;
+  background-position: 0 50%;
 }
 
 main {
-    box-sizing: border-box;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-image: linear-gradient(225deg, transparent 4em, #f6f0e2 4em);
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-image: linear-gradient(225deg, transparent 4em, #f6f0e2 4em);
 }
 
 @media screen and (max-width: 800px) {
-    main {
-        margin: 0 15px 15px;
-        padding: 15px;
-        padding-bottom: 2em;
-    }
+  main {
+    margin: 0 15px 15px;
+    padding: 15px;
+    padding-bottom: 2em;
+  }
 }
 
 @media screen and (min-width: 801px) {
-    main {
-        padding: 30px;
-        padding-bottom: 4em;
-    }
+  main {
+    padding: 30px;
+    padding-bottom: 4em;
+  }
 }
 
 @media screen and (min-width: 801px) and (max-width: 1200px) {
-    main {
-        width: 95%;
-        max-width: 800px;
-    }
+  main {
+    width: 95%;
+    max-width: 800px;
+  }
 }
 
 @media screen and (min-width: 1201px) {
-    main {
-        width: 95%;
-        max-width: 1200px;
-    }
+  main {
+    width: 95%;
+    max-width: 1200px;
+  }
 }
 
 h2 {
-    font-size: 1.4em;
+  font-size: 1.4em;
 }
 
 p {
-    margin-bottom: 30px;
-    font-weight: normal;
+  margin-bottom: 30px;
+  font-weight: normal;
 }
 
 .button {
-    display: inline-block;
-    margin-bottom: 12px;
-    padding: 8px 15px;
-    border: 2px solid #009edb;
-    text-decoration: none;
-    font-weight: bold;
-    color: #009edb;
-    box-shadow: 4px 4px 0 #009edb;
-    transition: all 300ms ease-in-out;
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 8px 15px;
+  border: 2px solid #009edb;
+  text-decoration: none;
+  font-weight: bold;
+  color: #009edb;
+  box-shadow: 4px 4px 0 #009edb;
+  transition: all 300ms ease-in-out;
 }
 
 .button:hover {
-    background-color: white;
-    border-color: #1e1e60;
-    color: #1e1e60;
-    box-shadow: 6px 6px 0 #1e1e60;
+  background-color: white;
+  border-color: #1e1e60;
+  color: #1e1e60;
+  box-shadow: 6px 6px 0 #1e1e60;
 }
 
 .button + .button {
-    margin-left: 12px;
+  margin-left: 12px;
 }
 
 p.intro {
-    grid-column: 1 / -1;
-    margin-right: 4em;
-    font-size: 1.1em;
+  grid-column: 1 / -1;
+  margin-right: 4em;
+  font-size: 1.1em;
 }
 
 .intro small {
-    margin-top: 0.5em;
-    font-weight: normal;
-    display: block;
+  margin-top: 0.5em;
+  font-weight: normal;
+  display: block;
 }
 
 .emoji {
-    margin: 0 4px 0 6px;
-    display: inline-block;
+  margin: 0 4px 0 6px;
+  display: inline-block;
 }
 
 .arrow img {
-    width: auto;
+  width: auto;
 }

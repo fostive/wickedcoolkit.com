@@ -1,26 +1,29 @@
 {
-    "name": "wickedcoolkit.com",
-    "description": "A fun, nostalgic web toolkit built on Heroku and Salesforce.",
-    "version": "1.0.0",
-    "bugs": {
-        "url": "https://github.com/andyet/wickedcoolkit.com/issues"
-    },
-    "dependencies": {
-        "handlebars": "^4.7.6",
-        "if-env": "^1.0.4",
-        "serve": "^11.3.2"
-    },
-    "homepage": "https://github.com/andyet/wickedcoolkit.com#readme",
-    "keywords": [],
-    "license": "ISC",
-    "main": "index.js",
-    "private": true,
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/andyet/wickedcoolkit.com.git"
-    },
-    "scripts": {
-        "build": "node build.js",
-        "serve": "if-env PORT && serve -l $PORT public || serve public"
-    }
+  "name": "wickedcoolkit.com",
+  "description": "A fun, nostalgic web toolkit built on Heroku and Salesforce.",
+  "version": "1.0.0",
+  "bugs": {
+    "url": "https://github.com/andyet/wickedcoolkit.com/issues"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.6",
+    "if-env": "^1.0.4",
+    "serve": "^11.3.2"
+  },
+  "homepage": "https://github.com/andyet/wickedcoolkit.com#readme",
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andyet/wickedcoolkit.com.git"
+  },
+  "scripts": {
+    "build:dev": "node build.js",
+    "build:production": "node build.js && npm run minify",
+    "build": "if-env NODE_ENV=production && npm run build:production || npm run build:dev",
+    "minify": "for file in public/resources/*.css; do cat $file | postcss > ${file%.*}.min.css; done",
+    "serve": "if-env PORT && serve -l $PORT public || serve public"
+  }
 }
