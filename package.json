@@ -14,6 +14,9 @@
     "postcss-cli": "^8.3.1",
     "wicked-coolkit": "0.0.21"
   },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  },
   "homepage": "https://github.com/andyet/wickedcoolkit.com#readme",
   "keywords": [],
   "license": "ISC",
@@ -27,6 +30,7 @@
     "build": "if-env NODE_ENV=production && npm run minify || true",
     "clean": "rm -rf public/resources/*.min.css",
     "minify": "npm run clean; for file in public/resources/*.css; do cat $file | postcss > ${file%.*}.min.css; done",
+    "prettier": "prettier '**/*.{js,css,html}' --write",
     "start": "node server.js"
   }
 }

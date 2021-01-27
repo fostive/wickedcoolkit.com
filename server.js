@@ -15,8 +15,8 @@ const CDN_HOST = "https://unpkg.com/wicked-coolkit";
 const CDN = `${CDN_HOST}@${COOLKIT_VERSION}/dist`;
 const SF_INSTALL_URL = `https://login.salesforce.com/packaging/installPackage.apexp?p0=04t4x000000Qr7pAAC`;
 
-const sticker = p => `${CDN}/stickers/${p}`;
-const script = name =>
+const sticker = (p) => `${CDN}/stickers/${p}`;
+const script = (name) =>
   `<script async type="module" src="${CDN}/${name}.js"></script>`;
 
 const stickers = fs
@@ -33,7 +33,7 @@ const stickers = fs
   .split("\n")
   .slice(1)
   .filter(Boolean)
-  .map(line => {
+  .map((line) => {
     const [alt, name] = line.split(",").map(JSON.parse);
     return { alt, name };
   })
@@ -41,20 +41,20 @@ const stickers = fs
   .reduce((acc, s) => {
     const tag = s.name
       .replace(/&/g, "-")
-      .replace(/-./g, l => l[1].toUpperCase());
+      .replace(/-./g, (l) => l[1].toUpperCase());
     acc[tag] = {
       alt: s.alt,
       svg: sticker(`svg/${s.name}.svg`),
-      png: sticker(`png/${s.name}.png`)
+      png: sticker(`png/${s.name}.png`),
     };
     return acc;
   }, {});
 
 const components = ["tradingCard", "hitCounter", "webring"].reduce((acc, c) => {
-  const tag = c.replace(/[A-Z]/g, l => `-${l.toLowerCase()}`);
+  const tag = c.replace(/[A-Z]/g, (l) => `-${l.toLowerCase()}`);
   acc[c] = {
     script: script(c),
-    tag: `<wck-${tag} host="${API_HOST}"></wck-${tag}>`
+    tag: `<wck-${tag} host="${API_HOST}"></wck-${tag}>`,
   };
   return acc;
 }, {});
@@ -65,7 +65,7 @@ const locals = {
   components,
   stickers,
   stickersZip: sticker("stickers.zip"),
-  dotMin: PROD ? ".min" : ""
+  dotMin: PROD ? ".min" : "",
 };
 
 const app = express();
