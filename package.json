@@ -12,7 +12,7 @@
     "if-env": "^1.0.4",
     "postcss": "^8.2.4",
     "postcss-cli": "^8.3.1",
-    "wicked-coolkit": "0.0.21"
+    "wicked-coolkit": "0.0.22"
   },
   "devDependencies": {
     "prettier": "^2.2.1"
