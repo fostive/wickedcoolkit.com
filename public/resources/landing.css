@@ -1,8 +1,8 @@
 main {
-    max-width: 1200px;
-    display: grid;
-    grid-column-gap: 30px;
-    grid-row-gap: 50px;
+  max-width: 1200px;
+  display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 50px;
 }
 
 @media screen and (max-width: 800px) {
@@ -14,9 +14,9 @@ main {
 }
 
 @media screen and (min-width: 801px) {
-    main {
-        padding: 30px;
-    }
+  main {
+    padding: 30px;
+  }
 }
 
 @media screen and (min-width: 801px) and (max-width: 1200px) {
@@ -189,7 +189,7 @@ p.intro {
 }
 
 .footnote {
-    margin: 3em 0 0;
-    grid-column: 1 / -1;
-    text-align: center;
+  margin: 3em 0 0;
+  grid-column: 1 / -1;
+  text-align: center;
 }
