@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5000;
 const COOLKIT_VERSION = require("./package.json").dependencies[
   "wicked-coolkit"
 ];
-const USER_REPO = "https://github.com/andyet/wicked-coolkit-user";
+const USER_REPO = "https://github.com/fostive/wicked-coolkit-user";
 const API_HOST = "wickedcoolkitapi.herokuapp.com";
 const PROD_URL = "https://wickedcoolkit.com";
 const CDN_HOST = "https://unpkg.com/wicked-coolkit";

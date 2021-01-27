@@ -3,7 +3,7 @@
   "description": "A fun, nostalgic web toolkit built on Heroku and Salesforce.",
   "version": "1.0.0",
   "bugs": {
-    "url": "https://github.com/andyet/wickedcoolkit.com/issues"
+    "url": "https://github.com/fostive/wickedcoolkit.com/issues"
   },
   "dependencies": {
     "cssnano": "^4.1.10",
@@ -17,14 +17,14 @@
   "devDependencies": {
     "prettier": "^2.2.1"
   },
-  "homepage": "https://github.com/andyet/wickedcoolkit.com#readme",
+  "homepage": "https://github.com/fostive/wickedcoolkit.com#readme",
   "keywords": [],
   "license": "ISC",
   "main": "index.js",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andyet/wickedcoolkit.com.git"
+    "url": "git+https://github.com/fostive/wickedcoolkit.com.git"
   },
   "scripts": {
     "build": "if-env NODE_ENV=production && npm run minify || true",
