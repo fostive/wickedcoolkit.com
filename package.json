@@ -30,7 +30,8 @@
     "build": "if-env NODE_ENV=production && npm run minify || true",
     "clean": "rm -rf public/resources/*.min.css",
     "minify": "npm run clean; for file in public/resources/*.css; do cat $file | postcss > ${file%.*}.min.css; done",
-    "prettier": "prettier '**/*.{js,css,html}' --write",
+    "prettier": "prettier --write \"**/*.{css,html,js,json,md}\"",
+    "prettier:verify": "prettier --list-different \"**/*.{css,html,js,json,md}\"",
     "start": "node server.js"
   }
 }
