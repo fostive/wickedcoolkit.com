@@ -7,7 +7,7 @@ const pack = require("./package.json");
 const PROD = process.env.NODE_ENV === "production";
 const PORT = process.env.PORT || 5000;
 
-const SF_PACKAGE_ID = "04t4x000000Qr7pAAC";
+const SF_PACKAGE_ID = process.env.SF_PACKAGE_ID || "04t4x000000Qr7pAAC";
 const PACKAGE_NAME = "wicked-coolkit";
 const COOLKIT_VERSION = pack.dependencies[PACKAGE_NAME];
 const USER_REPO = "https://github.com/andyet/wicked-coolkit-user";
