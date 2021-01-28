@@ -2,18 +2,20 @@ const fs = require("fs");
 const path = require("path");
 const express = require("express");
 const hbs = require("hbs");
+const pack = require("./package.json");
 
 const PROD = process.env.NODE_ENV === "production";
 const PORT = process.env.PORT || 5000;
-const COOLKIT_VERSION = require("./package.json").dependencies[
-  "wicked-coolkit"
-];
+
+const SF_PACKAGE_ID = "04t4x000000Qr7pAAC";
+const PACKAGE_NAME = "wicked-coolkit";
+const COOLKIT_VERSION = pack.dependencies[PACKAGE_NAME];
 const USER_REPO = "https://github.com/fostive/wicked-coolkit-user";
 const API_HOST = "wickedcoolkitapi.herokuapp.com";
 const PROD_URL = "https://wickedcoolkit.com";
-const CDN_HOST = "https://unpkg.com/wicked-coolkit";
+const CDN_HOST = `https://unpkg.com/${PACKAGE_NAME}`;
 const CDN = `${CDN_HOST}@${COOLKIT_VERSION}/dist`;
-const SF_INSTALL_URL = `https://login.salesforce.com/packaging/installPackage.apexp?p0=04t4x000000Qr7pAAC`;
+const SF_INSTALL_URL = `https://login.salesforce.com/packaging/installPackage.apexp?p0=${SF_PACKAGE_ID}`;
 
 const sticker = (p) => `${CDN}/stickers/${p}`;
 const script = (name) =>
@@ -21,13 +23,7 @@ const script = (name) =>
 
 const stickers = fs
   .readFileSync(
-    path.join(
-      "node_modules",
-      "wicked-coolkit",
-      "dist",
-      "stickers",
-      "stickers.csv"
-    )
+    path.join("node_modules", PACKAGE_NAME, "dist", "stickers", "stickers.csv")
   )
   .toString()
   .split("\n")
