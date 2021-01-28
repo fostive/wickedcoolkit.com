@@ -8,6 +8,7 @@
   "dependencies": {
     "cssnano": "^4.1.10",
     "express": "^4.17.1",
+    "express-force-https": "^1.0.0",
     "hbs": "^4.1.1",
     "if-env": "^1.0.4",
     "postcss": "^8.2.4",
