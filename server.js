@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const express = require("express");
 const hbs = require("hbs");
+const forceHttps = require("express-force-https");
 const pack = require("./package.json");
 
 const PROD = process.env.NODE_ENV === "production";
@@ -66,6 +67,7 @@ const locals = {
 
 const app = express();
 
+if (PROD) app.use(forceHttps);
 app.use(express.static("./public"));
 app.set("view engine", "html");
 app.engine("html", hbs.__express);
