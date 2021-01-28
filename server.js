@@ -57,6 +57,7 @@ const components = ["tradingCard", "hitCounter", "webring"].reduce((acc, c) => {
 }, {});
 
 const locals = {
+  userRepo: USER_REPO,
   deployUrl: `https://heroku.com/deploy?template=${USER_REPO}`,
   prodHost: PROD_URL,
   components,
