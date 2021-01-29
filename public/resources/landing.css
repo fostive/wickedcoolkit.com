@@ -99,6 +99,12 @@ p.intro {
 .trading-card-content .bolts {
   margin: 15px 0 0 8px;
 }
+.trading-card-content small {
+  margin: -.5em 0 1.5em;
+  font-size: 85%;
+  font-weight: normal;
+  display: block;
+}
 
 @media screen and (max-width: 800px) {
   .trading-card-content .arrow {
