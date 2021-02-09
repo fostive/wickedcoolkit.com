@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+
+    <title>Wicked Coolkit</title>
+    <meta
+      name="description"
+      content="A fun, nostalgic web toolkit built on Heroku and Salesforce."
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="/resources/favicon.ico" />
+
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta content="@heroku" name="twitter:site" />
+    <meta content="@heroku" name="twitter:creator" />
+    <meta content="Wicked Coolkit" name="twitter:title" property="og:title" />
+    <meta
+      content="A fun, nostalgic web toolkit built on Heroku and Salesforce."
+      name="twitter:description"
+      property="og:description"
+    />
+    <meta
+      content="{{prodHost}}/resources/images/og-image.png"
+      property="og:image"
+    />
+    <meta
+      content="{{prodHost}}/resources/images/og-image.png"
+      name="twitter:image"
+    />
+    <meta content="{{prodHost}}" property="og:url" />
+    <meta content="{{prodHost}}" property="twitter:url" />
+
+    <link rel="stylesheet" href="/resources/reset{{dotMin}}.css" />
+    <link rel="stylesheet" href="/resources/global{{dotMin}}.css" />
+    <link rel="stylesheet" href="/resources/faq{{dotMin}}.css" />
+  </head>
+  <body>
+    <div id="main">
+      <header>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="290"
+          height="110"
+          viewBox="0 0 290 110"
+        >
+          <path
+            fill="#323029"
+            d="M0 2.84l27.49-.12.68 55.65h-9.33L0 2.84z"
+          ></path>
+          <circle cx="28.17" cy="79.12" r="28.16" fill="#323029" />
+          <path
+            fill="#f6f0e2"
+            d="M22.81 4.83h11.31l6.73 22.35L48.3 4.72h9.21l7.45 22.46 6.73-22.35h11.09l-12.91 38.9h-9.32L52.77 21.5l-7.73 22.23h-9.32L22.81 4.83zM87.25 4.83h10.76v38.62H87.25zM103.74 24.26v-.11c0-11.26 8.67-20.09 20.36-20.09 7.89 0 13 3.31 16.39 8.06l-8.06 6.23c-2.2-2.76-4.74-4.52-8.44-4.52-5.4 0-9.21 4.58-9.21 10.2v.12c0 5.79 3.81 10.31 9.21 10.31 4 0 6.4-1.87 8.72-4.69l8.06 5.74c-3.64 5-8.55 8.72-17.11 8.72a19.61 19.61 0 0 1-19.92-19.97zM145.34 4.83h10.71V20.5l13.3-15.67h12.69l-14.63 16.61 15.12 22.02h-12.85l-9.71-14.35-3.92 4.36v9.99h-10.71V4.83zM185.62 4.83h31.06v9.11h-20.47v5.85h18.54v8.44h-18.54v6.12h20.75v9.11h-31.34V4.83zM237.32 4.83h-14.9v38.63h14.68c13.9 0 22-8.28 22-19.43v-.11c.01-11.14-7.99-19.09-21.78-19.09zm10.81 19.37c0 6.24-4.25 9.77-10.65 9.77h-4.36V14.32h4.36c6.4 0 10.65 3.59 10.65 9.77zM22.81 80.25v-.11c0-11.26 8.66-20.09 20.36-20.09 7.89 0 13 3.31 16.38 8.06l-8 6.23c-2.21-2.76-4.75-4.52-8.44-4.52-5.41 0-9.22 4.58-9.22 10.21v.11c0 5.79 3.81 10.31 9.22 10.31 4 0 6.4-1.87 8.71-4.69l8.06 5.74c-3.64 5-8.55 8.72-17.11 8.72a19.61 19.61 0 0 1-19.96-19.97zM82.84 60.05c-11.92 0-20.86 9-20.86 20.09v.11c0 11.09 8.83 20 20.75 20s20.85-9 20.85-20.08V80c0-11.06-8.83-19.95-20.74-19.95zm9.82 20.2c0 5.57-3.92 10.32-9.82 10.32S73 85.71 73 80.14V80c0-5.58 3.92-10.32 9.77-10.32s9.93 4.85 9.93 10.43zM128.68 60.05c-11.91 0-20.85 9-20.85 20.09v.11c0 11.09 8.83 20 20.74 20s20.86-9 20.86-20.08V80c0-11.06-8.83-19.95-20.75-19.95zm9.83 20.2c0 5.57-3.92 10.32-9.83 10.32s-9.87-4.86-9.87-10.43V80c0-5.58 3.92-10.32 9.76-10.32s9.94 4.85 9.94 10.43zM155 60.82h10.7v29.25h18.71v9.38H155V60.82z"
+          ></path>
+          <path
+            fill="none"
+            stroke="#f6f0e2"
+            stroke-miterlimit="10"
+            d="M189.49 60.82h10.7V76.5l13.3-15.68h12.69l-14.62 16.61 15.11 22.02h-12.85l-9.71-14.35-3.92 4.36v9.99h-10.7V60.82zM230.48 60.82h10.76v38.62h-10.76zM257.74 70.2h-11.59v-9.38h33.88v9.38h-11.59v29.25h-10.7V70.2z"
+          ></path>
+        </svg>
+      </header>
+
+      <main>
+        <h2>Frequently Asked Questions</h2>
+        <h3>General</h3>
+        <dl class="faq">
+          <dt>Why “wicked”?</dt>
+          <dd>[ wik-id ] adverb. Slang. very; really; totally: That shirt is wicked cool. <a href="https://www.merriam-webster.com/words-at-play/wicked-adverb-intensifier-usage">Apparently it started in New England!</a> (the northeast USA)</dd>
+          <dt>What is a trading card?</dt>
+          <dd>The developer trading card is a reminder of days spent trading sports cards or fantasy cards with friends. Maybe it was stickers for you. It’s also a space where developers can represent their interests outside of tech.</dd>
+          <dt>What is a webring?</dt>
+          <dd>Popular in the 90s and 00s, <a href="https://en.wikipedia.org/wiki/Webring">webrings</a> were collections of websites linked together. You could click through the “ring” and discover new sites, often grouped together because of similar subject matter.</dd>
+          <dt>What is a hit counter?</dt>
+          <dd>Also popular around the same time, people added <a href="https://en.wikipedia.org/wiki/Web_counter">hit counters</a> to their websites to show how many visitors (or really, page views) their site received. It was not uncommon to refresh a site a bunch to artificially inflate your hit counter stats.</dd>
+          <dt>Is the hit counter tracking my website visitors’ personal info (like IP address)?</dt>
+          <dd>No. The hit counter just counts hits (i.e. page loads). It only stores a number and increments that number each time it’s loaded.</dd>
+          <dt>How is Wicked Coolkit built?</dt>
+          <dd>It’s built with using Lightning Web Components.</dd>
+        </dl>
+        <h3>Support</h3>
+        <dl class="faq">
+          <dt>How do I update my Trading Card Heroku app when there are new features or bug fixes?</dt>
+          <dd>You have two options. You can delete and <a href="https://heroku.com/deploy?template=https://github.com/fostive/wicked-coolkit-user">recreate/redeploy the Trading Card Heroku app</a>. All your Trading Card data is stored in Salesforce, so you won’t lose anything. After the deploy, you’ll need to connect the Heroku app to Salesforce again using the OAuth process (step 3 in /getting-started instructions).<br><br><p>Alternatively do this to update your existing Heroku app:</p>
+<pre><code>git clone git@github.com:fostive/wicked-coolkit-user.git
+cd wicked-coolkit-user
+heroku git:remote --app <your-heroku-app-name>
+git push heroku main</code></pre>
+          </dd>
+          <dt>Do I really need a new Salesforce Developer instance if I already have one?</dt>
+          <dd>Yes. You’ll need to sign up with a globally unique email address. If your email provider allows you to, a good trick is to add a <code>+coolkit</code> to your email. (e.g. name+coolkit@email.com)</dd>
+        </dl>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>
