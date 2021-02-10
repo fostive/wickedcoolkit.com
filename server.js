@@ -75,6 +75,7 @@ app.engine("html", hbs.__express);
 
 app.get("/", (req, res) => res.render("index", locals));
 app.get("/steps", (req, res) => res.render("steps", locals));
+app.get("/faq", (req, res) => res.render("faq", locals));
 app.get("/stickers", (req, res) => res.render("stickers", locals));
 app.get("/install", (req, res) => res.redirect(SF_INSTALL_URL));
 
