@@ -199,3 +199,11 @@ p.intro {
   grid-column: 1 / -1;
   text-align: center;
 }
+
+.footer-links {
+  margin-top: 1em;
+}
+
+.footer-links a {
+  margin: 0 5px;
+}
